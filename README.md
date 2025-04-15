@@ -100,23 +100,23 @@ Tämän jälkeen kloonasin sen, sillä lähdin ratkaisemaan target practice dock
 <img width="335" alt="image" src="https://github.com/user-attachments/assets/c0cc774a-8be2-4138-b2f9-2e69867341a6" />
 
 
-Then I run the target which gave me this:
+Sitten pyöritin targetin, joka näytti näin. 
 
 <img width="304" alt="image" src="https://github.com/user-attachments/assets/26071678-b1f9-45ac-88cd-cb351d343556" />
 
-And run curl command from localhost. Curl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP. 
+Ja pyöritin curlin komentoa käyttäen. Curl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP. 
 
 
 <img width="314" alt="image" src="https://github.com/user-attachments/assets/2c04d22b-c189-47b1-bde4-2ce2050436eb" />
 
 
-And I got the target up by testing the localhost. 
+Ja sain targetin ylös testatessa localhostia. 
 
 
 <img width="497" alt="image" src="https://github.com/user-attachments/assets/eb7d9237-e0cd-466a-876d-fd2fe57dab9a" />
 
 
-After that I installed all the given wordlists and started using fuff. 
+Asensin sen jälkeen kaikki wordlistit ja käynnistin fuffin.  
 
 <img width="336" alt="image" src="https://github.com/user-attachments/assets/0634af7a-2ec8-4e75-b932-ab64b04f3d96" />
 
@@ -127,13 +127,13 @@ Suljin apachen hetkelliseksi, sillä se toi liikennettä port 80/tcp.
 <img width="323" alt="image" src="https://github.com/user-attachments/assets/6cff5a9d-ee57-48fa-a0d7-8ce7b373ace6" />
 
 
-I tried to run docker again put it flagged as error. 
+Tässä kohtaa docker näytti jostain syystä erroria.  
 
 
 <img width="329" alt="image" src="https://github.com/user-attachments/assets/4b39f7f4-fae3-44ab-892e-5861c4512694" />
 
 
-And here found the ports listening: 
+Ja löysin portit, jotka huomasivat liikennettä- 
 
 
 <img width="331" alt="image" src="https://github.com/user-attachments/assets/029fe641-6478-46c4-88d6-301f35274f69" />
@@ -142,7 +142,33 @@ And here found the ports listening:
 
 
 
+f) No 404 Status
 
+
+Ja sitten suodatin kaikki, jossa ei ollut 669 tavua 
+
+
+<img width="322" alt="image" src="https://github.com/user-attachments/assets/0773346b-c70f-4277-b473-9934bec6134c" />
+
+Näin yksi line muodostui ja siitä muodostui secret
+
+
+
+<img width="311" alt="image" src="https://github.com/user-attachments/assets/813e0051-f637-4055-8bd7-12321b7a2599" />
+
+
+
+g) Param Mining
+
+
+
+
+h) Rate Limited
+
+
+
+
+i) Subdomains - Virtual Host Enumeration
 
 
 
