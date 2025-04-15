@@ -140,6 +140,31 @@ Ja löysin portit, jotka huomasivat liikennettä-
 
 
 
+c) 
+
+
+Annetulla komennolla class ja development log tuli näkyviin. 
+
+<img width="317" alt="image" src="https://github.com/user-attachments/assets/e75f78da-ec58-4615-b751-8e3ff3dbb1e8" />
+
+
+d) 
+
+Komennon ffuf -w ~/wordlists/common.txt -recursion -u http://localhost/cd/recursion/FUZZ pääsi näkemään vastauksen. 
+
+
+
+<img width="305" alt="image" src="https://github.com/user-attachments/assets/bfb1a3f3-8a59-4221-8858-a743629ef6a8" />
+
+
+
+
+e) 
+
+ffuf -w ~/wordlists/common.txt -e .log -u http://localhost/cd/ext/logs/FUZZ auttoi taas löytämään tämän:
+
+
+<img width="329" alt="image" src="https://github.com/user-attachments/assets/7002a356-10d9-44a3-ab29-671086fe7734" />
 
 
 f) No 404 Status
@@ -160,16 +185,34 @@ Näin yksi line muodostui ja siitä muodostui secret
 
 g) Param Mining
 
+Seuraavaksi siirryin param mining kohtaan, jossa piti etsiä puuttuva parametri. 
+
+Annettu komento ffuf -w ~/wordlists/parameters.txt -u http://localhost/cd/param/data?FUZZ=1 toi kadonneen debug parametrin takaisin. 
+
+<img width="275" alt="image" src="https://github.com/user-attachments/assets/b7914cba-a2ca-4c20-94a3-944d1e46fecd" />
 
 
 
 h) Rate Limited
 
 
+Palvelin on rajoitettu 50 pyyntöön sekunnissa tässä tehtävässä. Ensimmäisellä komennolla pyyntöjä tulee silti aivan liian nopeasti, joten sitä piti toisella komennolla rahoittaa. 
+
+<img width="304" alt="image" src="https://github.com/user-attachments/assets/8f3da248-69c6-4a23-aad4-b50711807f09" />
 
 
-i) Subdomains - Virtual Host Enumeration
+Pyynnöt liikkuvat hitaasti, mutta lopulta oraclen sain näkyviin. 
 
+
+
+
+
+## Yhteenveto
+
+- Pääsi hyvin käytännönläheisesti fuzzaamaan fuffin avulla ja näkemään miten se toimii
+- Meni loppujen lopuksi ihan hyvin
+- Tässä tuli lopussa hieman kiire, sillä aamulla alkoi työt, joten päiväksi en kerkeisi päivittämään tietoja
+- Mielenkiintoinen aihe kaiken kaikkiaan. 
 
 
 # References
