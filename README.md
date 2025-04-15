@@ -77,7 +77,7 @@ Tämä löysi erilaisia polkuja, kuten git/config ja index
 <img width="325" alt="image" src="https://github.com/user-attachments/assets/364dbf4d-2daa-43ec-b5d5-40106d45fff7" />
 
 
-Testaamalla curl komennolla ja ensin git/configgia kalissa sain vastauksen selville!
+Työkalulla curl, joka oli asennettuna kaliin sain selvitettyä vastauksen! Kokeilin molempia jäljellä olevia git/index ja git/configgia. 
 
 <img width="319" alt="image" src="https://github.com/user-attachments/assets/3ad0226d-0d17-4e7d-b958-bf3699bd9301" />
 
@@ -87,8 +87,56 @@ Testaamalla curl komennolla ja ensin git/configgia kalissa sain vastauksen selvi
 
 b)
 
+Siirryttiin siis b-kohtaan. Lisäsin annettuja komentoja, kuten dockerin asennus. 
+
+<img width="299" alt="image" src="https://github.com/user-attachments/assets/65f7582f-ed9b-4558-a77e-f7f67424b7e8" />
+
+Tämän jälkeen kloonasin sen, sillä lähdin ratkaisemaan target practice dockeria. 
 
 
+<img width="327" alt="image" src="https://github.com/user-attachments/assets/281e258b-23fe-45d9-9410-6e87a3c45b7a" />
+
+
+<img width="335" alt="image" src="https://github.com/user-attachments/assets/c0cc774a-8be2-4138-b2f9-2e69867341a6" />
+
+
+Then I run the target which gave me this:
+
+<img width="304" alt="image" src="https://github.com/user-attachments/assets/26071678-b1f9-45ac-88cd-cb351d343556" />
+
+And run curl command from localhost. Curl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP. 
+
+
+<img width="314" alt="image" src="https://github.com/user-attachments/assets/2c04d22b-c189-47b1-bde4-2ce2050436eb" />
+
+
+And I got the target up by testing the localhost. 
+
+
+<img width="497" alt="image" src="https://github.com/user-attachments/assets/eb7d9237-e0cd-466a-876d-fd2fe57dab9a" />
+
+
+After that I installed all the given wordlists and started using fuff. 
+
+<img width="336" alt="image" src="https://github.com/user-attachments/assets/0634af7a-2ec8-4e75-b932-ab64b04f3d96" />
+
+
+Suljin apachen hetkelliseksi, sillä se toi liikennettä port 80/tcp. 
+
+
+<img width="323" alt="image" src="https://github.com/user-attachments/assets/6cff5a9d-ee57-48fa-a0d7-8ce7b373ace6" />
+
+
+I tried to run docker again put it flagged as error. 
+
+
+<img width="329" alt="image" src="https://github.com/user-attachments/assets/4b39f7f4-fae3-44ab-892e-5861c4512694" />
+
+
+And here found the ports listening: 
+
+
+<img width="331" alt="image" src="https://github.com/user-attachments/assets/029fe641-6478-46c4-88d6-301f35274f69" />
 
 
 
@@ -104,3 +152,9 @@ Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf. https://teroka
 
 
 Hoikkala 2023: ffuf README.md https://github.com/ffuf/ffuf/blob/master/README.md
+
+
+Kali 2025: tools - curl, https://www.kali.org/tools/curl/#curl
+
+
+
